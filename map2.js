@@ -31,3 +31,8 @@ var phoneBook = [
 // For example, the 0th element of the new array should be {Abe: "1-111-111-1111"}
 
 //Your code here
+let newPhoneBook = phoneBook.map((x) => {
+  x[Object.keys(x)[0]] = x[Object.keys(x)[0]].charAt(0).concat("-",x[Object.keys(x)[0]]);
+  return x;
+});
+console.log(newPhoneBook);

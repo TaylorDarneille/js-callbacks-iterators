@@ -12,3 +12,6 @@
 
 // your code here
 
+foods.forEach((x) => {
+  console.log(x.name, "is", x.level, "delicious");
+});
