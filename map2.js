@@ -31,3 +31,32 @@ var phoneBook = [
 // For example, the 0th element of the new array should be {Abe: "1-111-111-1111"}
 
 //Your code here
+
+// using this logic:
+// phoneBook[0].Abe = '12312312424'
+// console.log(phoneBook)
+
+const areaCode = (contact) => {
+  console.log(contact)
+  let key = Object.keys(contact)
+  let person = key[0]
+
+  let value = Object.values(contact)
+  let number = value[0]
+
+  let numArr = number.split("")
+  numArr.splice(0, 0, '1-')
+  number = numArr.join("")
+
+  //why in god's name is this creating a new property instead of changing the existing
+  contact.person = number
+
+  console.log(contact)
+
+  return contact
+}
+
+const newBook = phoneBook.map(areaCode)
+
+console.log(newBook)
+

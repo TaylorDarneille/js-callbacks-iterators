@@ -12,3 +12,4 @@
 
 // your code here
 
+foods.forEach((food) => {console.log(food.name, "is", food.level, "delicious")})

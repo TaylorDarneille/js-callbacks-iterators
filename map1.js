@@ -6,3 +6,10 @@ var mneumonics = ['My Very Excellent Mother Just Sent Me Nine Pizzas', 'Please E
 
 // Your code here!
 
+const mapper = (element) => {
+    return element.split(" ")
+}
+
+const mapped = mneumonics.map(mapper)
+console.log(mapped)
+
