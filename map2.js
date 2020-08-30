@@ -31,3 +31,11 @@ var phoneBook = [
 // For example, the 0th element of the new array should be {Abe: "1-111-111-1111"}
 
 //Your code here
+const newPhoneBook = phoneBook.map((contact) => {
+  let contactName = Object.keys(contact);
+  let number = Object.values(contact).toString();
+  let reformatNumber = number.slice(0,1) + "-" + number;
+  return {[contactName]: reformatNumber};
+})
+
+console.log(newPhoneBook)

@@ -6,3 +6,10 @@ var mneumonics = ['My Very Excellent Mother Just Sent Me Nine Pizzas', 'Please E
 
 // Your code here!
 
+
+const firstWord = (element) => {
+    return element.split(" ")
+  }
+  
+  const worded = mneumonics.map(firstWord)
+  console.log(worded)
