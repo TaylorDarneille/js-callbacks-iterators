@@ -6,3 +6,8 @@ var mneumonics = ['My Very Excellent Mother Just Sent Me Nine Pizzas', 'Please E
 
 // Your code here!
 
+const newArray = mneumonics.map(str => {
+    //take each string split at space
+    return str.split(' ')
+  })
+  console.log(newArray)

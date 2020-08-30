@@ -24,3 +24,10 @@ var isCool = function(person) {
 }
 
 // Your code goes here
+const coolPeople = people.filter(isCool)
+console.log(coolPeople)
+
+//OR
+const coolPeopleTwo = people.filter(person => {
+  isCool(person)
+})

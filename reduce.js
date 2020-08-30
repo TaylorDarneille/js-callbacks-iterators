@@ -8,3 +8,11 @@ var numbers = [1, 56, 2, 4, 1, 99, 3, 5];
 // via multiplication
 
 
+
+const multiply = (acc, next) => {
+    return acc*next
+  }
+  
+  const product = numbers.reduce(multiply)
+  console.log(product)
+  
