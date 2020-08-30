@@ -31,3 +31,22 @@ var phoneBook = [
 // For example, the 0th element of the new array should be {Abe: "1-111-111-1111"}
 
 //Your code here
+//var areaCode = (contact) =>{
+
+//}
+
+// var myString = "Hello ";
+// myString += "World";
+// myString += "!";
+
+// let newPhoneBook = phoneBook.map((areaCode) => {
+//   areaCode[Object.keys(areaCode)[0]] = areaCode[Object.keys(areaCode)[0]].charAt(0).concat("-",areaCode[Object.keys(areaCode)[0]]);
+//   return areaCode;
+// });
+// console.log(newPhoneBook); 
+
+let newPhoneBook = phoneBook.map((areaCode) => {
+  areaCode[Object.keys(areaCode)[0]] = areaCode[Object.keys(areaCode)[0]].charAt(0).concat("-",areaCode[Object.keys(areaCode)[0]]);
+  return areaCode;
+});
+console.log(newPhoneBook); 
