@@ -6,3 +6,10 @@ var mneumonics = ['My Very Excellent Mother Just Sent Me Nine Pizzas', 'Please E
 
 // Your code here!
 
+var toRet = [];
+mneumonics.map(function(item){
+    var toInsert = item.split(' ');
+    toRet.push([toInsert]);
+})
+
+console.log(toRet);
