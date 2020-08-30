@@ -31,3 +31,15 @@ var phoneBook = [
 // For example, the 0th element of the new array should be {Abe: "1-111-111-1111"}
 
 //Your code here
+const newPhoneBook = phoneBook.map((contact) => {
+  //Take each contact phone number and convert it to a string. Object.values(contact) returns the value of a key in phoneBook
+  let objToString = Object.values(contact).toString();
+  //Add in the first element of a contact and a '-' to the original contact number.
+  let reformatNumber = objToString.slice(0,1) + '-' + objToString;
+  //Iterate and assign contact name
+  let contactName = Object.keys(contact);
+  //return old key and new value - [] brackets makes contactName an object to pass in as a key
+  return {[contactName]: reformatNumber};
+})
+
+console.log(newPhoneBook);
