@@ -31,3 +31,16 @@ var phoneBook = [
 // For example, the 0th element of the new array should be {Abe: "1-111-111-1111"}
 
 //Your code here
+
+ function makeNumber(number){
+   var startNum = JSON.stringify(number).charAt(2);
+   return startNum + '-' + number;
+ }
+
+var toRet = [];
+Object.values(phoneBook).map(function(e){
+  var number = (Object.values(e));
+  toRet.push(makeNumber(number));
+})
+
+console.log(toRet);

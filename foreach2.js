@@ -4,7 +4,7 @@
 // > Tacos is mostly delicious
 // > Cottage Cheese is not very delicious
 
- var foods = [
+var foods = [
   {name: "Pizza", level: "very"},
   {name: "Tacos", level: "mostly"},
   {name: "Cottage Cheese", level: "not very"}
@@ -12,3 +12,10 @@
 
 // your code here
 
+function printNameAndLevel(food,level){
+  console.log(food.name + " is  "+ level.level);
+}
+
+foods.forEach(function(food){
+  console.log(food.name + " is "+ food.level + " delicious")
+});

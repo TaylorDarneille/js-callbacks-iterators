@@ -1,4 +1,3 @@
-
 // (1) Use the .forEach iterator to loop over the following array of foods and say you like them.
 
 // The output should be
@@ -9,3 +8,11 @@
 var foods = ["pizza", "tacos", "ice cream", "sushi"];
 
 // your code here
+
+ function printFood(food){
+     console.log("I like " + food);
+ }
+
+foods.forEach(function(food){
+    printFood(food);
+});
