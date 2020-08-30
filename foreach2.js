@@ -12,3 +12,6 @@
 
 // your code here
 
+foods.forEach((value) => {
+  console.log(value.name + " is " + value.level + " delicious")
+})
