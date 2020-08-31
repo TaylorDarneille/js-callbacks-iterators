@@ -31,3 +31,13 @@ var phoneBook = [
 // For example, the 0th element of the new array should be {Abe: "1-111-111-1111"}
 
 //Your code here
+
+const newBook = phoneBook.map(function(customer){
+  let name = Object.keys(customer);
+  let phoneNumber = customer[name];
+  let newRecord = {};
+  newRecord[name] = '+' + phoneNumber.charAt(0) + '-' + phoneNumber;
+  return newRecord; 
+});
+
+console.log(newBook)

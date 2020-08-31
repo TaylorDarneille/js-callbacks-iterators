@@ -12,3 +12,14 @@
 
 // your code here
 
+var foods = [
+  {name: "Pizza", level: "very"},
+  {name: "Tacos", level: "mostly"},
+  {name: "Cottage Cheese", level: "not very"}
+];
+
+// your code here
+
+const isDelicious = foods.forEach(function(food) {
+  console.log(food.name,'is',food.level,'delicious')
+})
