@@ -8,3 +8,11 @@ var numbers = [1, 56, 2, 4, 1, 99, 3, 5];
 // via multiplication
 
 
+var mult = function(a,b) {
+    return a*b
+}
+
+var product = numbers.reduce(mult)
+
+console.log(product)
+
