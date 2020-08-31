@@ -24,3 +24,10 @@ var isCool = function(person) {
 }
 
 // Your code goes here
+
+
+const newArray = people.filter(person => {
+	return isCool(person)
+})
+
+console.log(newArray)

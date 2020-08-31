@@ -8,3 +8,8 @@ var numbers = [1, 56, 2, 4, 1, 99, 3, 5];
 // via multiplication
 
 
+const reducer = (num1,num2) => {
+  return num1*num2
+}
+
+console.log(numbers.reduce(reducer))
