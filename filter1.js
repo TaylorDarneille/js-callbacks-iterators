@@ -24,3 +24,15 @@ var isCool = function(person) {
 }
 
 // Your code goes here
+var isCool = function(person) {
+	return person.coolnessScore > 20;
+}
+
+// Your code goes here
+//person is singular form of people
+//make sure to use return
+var coolPeople = people.filter(person => {
+  return isCool(person)
+})
+
+console.log(coolPeople)

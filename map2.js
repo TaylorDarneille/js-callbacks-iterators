@@ -31,3 +31,18 @@ var phoneBook = [
 // For example, the 0th element of the new array should be {Abe: "1-111-111-1111"}
 
 //Your code here
+const getNum = phoneBook.map(function(item) {
+  const strName = Object.keys(item).toString()
+  //converts key to string
+  const num = Object.values(item).toString()
+  //converts value to string
+  const firstNum = num.charAt()
+  //grab character at index 0
+  const concNum = firstNum+'-'+num
+  //create a new phone number that appends prefix captured in firstNum
+  return {[strName]: concNum}
+  //save object that has key of person's name and value of updated phone number to the new array
+})
+
+
+console.log(getNum)

@@ -11,4 +11,7 @@
 ];
 
 // your code here
-
+foods.forEach(food => {
+  console.log(food.name,'is',food.level,'delicious')
+  //access value for name key and value for level to write a sentence
+})
