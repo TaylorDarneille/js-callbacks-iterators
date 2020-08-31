@@ -9,3 +9,9 @@
 var foods = ["pizza", "tacos", "ice cream", "sushi"];
 
 // your code here
+const likeFood = food => console.log(`I like ${food}`)
+foods.forEach(likeFood)
+
+// Why does writing it this way add an 'undefined' at the end of the list? Too many console.logs?
+// const likeFood = foods.forEach((food) => console.log(`I like ${food}`))
+// console.log(likeFood)

@@ -11,4 +11,5 @@
 ];
 
 // your code here
-
+const foodOps = food => console.log(`${food.name} is ${food.level} delicious`)
+foods.forEach(foodOps)
