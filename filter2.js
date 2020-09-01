@@ -16,3 +16,8 @@ let strings = misc.filter((val) => {
   return typeof val === 'string'
 })
 console.log(strings)
+
+// Your code goes here
+// the idea is to create a variable that contains a funtion that will  
+// iterate through the misc array and determine whether a the variable is a string or not
+// the typeof method is used to check.
