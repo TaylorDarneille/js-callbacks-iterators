@@ -30,4 +30,14 @@ var phoneBook = [
 // Take the phonebook above and use map to return a new phonebook that includes a country-code that matches the rest of the phone number.
 // For example, the 0th element of the new array should be {Abe: "1-111-111-1111"}
 
-//Your code here
+const newPhoneNumber = phoneBook.map(people => {
+  let person = Object.keys(people) [0];
+  let number = people[person];
+  let firstNumber = number[0]
+  let zipCode = firstNumber + '-' + number;
+  let contact = zipCode;
+
+  return contact;
+});
+
+console.log(newPhoneNumber);
