@@ -11,3 +11,5 @@ let mappedArray = mneumonics.map((arr)=>{
     return arr.split(' ') //to spit a string by letter you dont put a 
     
   })
+
+  //map: the same as a forEach (basically) but returns a new array

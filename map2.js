@@ -45,3 +45,5 @@ const newArray = phoneBook.map(function(customer){
 });
 
 console.log(newArray);
+
+//map: the same as a forEach (basically) but returns a new array
