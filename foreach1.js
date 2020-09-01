@@ -9,3 +9,11 @@
 var foods = ["pizza", "tacos", "ice cream", "sushi"];
 
 // your code here
+
+var foods = ["pizza", "tacos", "ice cream", "sushi"];
+
+
+let favFoods = foods.forEach((val) => {
+  return "I like " + val
+})
+console.log(favFoods)

@@ -6,3 +6,8 @@ var mneumonics = ['My Very Excellent Mother Just Sent Me Nine Pizzas', 'Please E
 
 // Your code here!
 
+let mappedArray = mneumonics.map((arr)=>{
+
+    return arr.split(' ') //to spit a string by letter you dont put a 
+    
+  })
