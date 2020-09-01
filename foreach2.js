@@ -12,3 +12,6 @@
 
 // your code here
 
+Object.values(foods).forEach(val => {
+  console.log(val);
+});

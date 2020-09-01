@@ -31,3 +31,30 @@ var phoneBook = [
 // For example, the 0th element of the new array should be {Abe: "1-111-111-1111"}
 
 //Your code here
+
+//this didnt work
+// for(var person in phoneBook){
+//   if(phoneBook[person] === "333-333-3333"){
+//    phoneBook.unshift(3);
+//   }
+// }
+
+// console.log(phoneBook);
+
+
+const newList= phoneBook.map(x=> x+1);
+
+console.log(newList);
+//confused with this one/
+
+
+// for(var person in phoneBook){
+//   if(phoneBook[person] === "333-333-3333"){
+//     console.log(person)
+//   }
+// }
+
+// var arrOfObj = [{name: 'eve'},{name:'john'},{name:'jane'}];
+// arrOfObj.map(function (obj) { 
+//    obj.isActive = true;
+// });

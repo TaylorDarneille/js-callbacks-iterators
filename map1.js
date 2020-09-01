@@ -6,3 +6,8 @@ var mneumonics = ['My Very Excellent Mother Just Sent Me Nine Pizzas', 'Please E
 
 // Your code here!
 
+const array1 = [3, 2, 4, 5];
+
+const mapExample = array1.map(x=> x **2);
+
+console.log(mapExample);
