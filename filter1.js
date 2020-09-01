@@ -24,3 +24,10 @@ var isCool = function(person) {
 }
 
 // Your code goes here
+
+let coolPeople = people.filter((val) => {
+	return isCool(val)
+  })
+  
+  console.log(coolPeople)
+
