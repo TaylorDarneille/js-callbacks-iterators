@@ -24,3 +24,6 @@ var isCool = function(person) {
 }
 
 // Your code goes here
+
+const newArr = people.filter(isCool) 
+console.log(newArr)
