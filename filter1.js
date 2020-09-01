@@ -24,3 +24,9 @@ var isCool = function(person) {
 }
 
 // Your code goes here
+//create an array that only includes the cool people
+var whoCool = people.filter(isCool)
+
+//return the names of those array elements
+console.log("The following people are cool:")
+whoCool.forEach(folks => console.log(folks.name))
