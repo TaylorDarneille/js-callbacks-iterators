@@ -31,3 +31,19 @@ var phoneBook = [
 // For example, the 0th element of the new array should be {Abe: "1-111-111-1111"}
 
 //Your code here
+const newBook= phoneBook.map(people => {
+  //set object key to a variable, adding the [0] has it log as a string rather than a portion of an array 
+  let person= Object.keys(people)[0];
+  //will print out each name(key) as a string 
+  console.log(person);
+  //accesses string associated with person (?)
+  let number= people[person];
+  console.log(number);
+  number= '1-'+ number;
+  return [person, number];
+  //I gave it my best shot but was not able to return the new numbers as objects WITH the name they belong to
+  //below statement returns updated number but cannot link the names saved in "person" as the object key 
+  //return {number};
+});
+
+console.log(newBook);

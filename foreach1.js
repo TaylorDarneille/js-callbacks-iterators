@@ -9,3 +9,9 @@
 var foods = ["pizza", "tacos", "ice cream", "sushi"];
 
 // your code here
+
+//using the function keyword because we are writing the code in an anon function
+//foodsValue is the current value in the array as we ~loop through it from the forEach()
+foods.forEach(function(foodsValue){
+  console.log('I like', foodsValue)
+});
