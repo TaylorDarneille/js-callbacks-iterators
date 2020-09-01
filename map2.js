@@ -31,3 +31,16 @@ var phoneBook = [
 // For example, the 0th element of the new array should be {Abe: "1-111-111-1111"}
 
 //Your code here
+
+const addCode = (contact) => {
+  // returns an array of an object's enumerable property names, iterated in the same order that a normal loop would
+  const number = contact[Object.keys(contact)[0]]
+  // returns the character at the specified index in a string
+  const countryCode = number.charAt(0)
+  contact[Object.keys(contact)[0]] = countryCode + '-'
+ + number
+ return contact 
+ }
+
+ const newPhoneBook = phoneBook.map(addCode)
+ console.log(newPhoneBook)
