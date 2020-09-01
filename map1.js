@@ -6,3 +6,5 @@ var mneumonics = ['My Very Excellent Mother Just Sent Me Nine Pizzas', 'Please E
 
 // Your code here!
 
+const newMneumonics = mneumonics.map((str) => str.split(" "));
+console.log(newMneumonics);

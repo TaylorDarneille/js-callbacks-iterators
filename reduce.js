@@ -7,4 +7,8 @@ var numbers = [1, 56, 2, 4, 1, 99, 3, 5];
 // Write something that takes the above array and returns the product of all the numbers
 // via multiplication
 
+const reducer = (accumulator, currentValue) => accumulator * currentValue;
+console.log(numbers.reduce(reducer))
+//got from mozilla.developer Array.prototype.reduce()
 
+//*Had help and tutoring from my BIL.
