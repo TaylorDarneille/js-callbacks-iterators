@@ -11,4 +11,6 @@
 ];
 
 // your code here
-
+foods.forEach((item, index, arr)=>{
+  console.log(arr[index].name + ' is ' + arr[index].level + ' delicious');
+})

@@ -30,4 +30,9 @@ var phoneBook = [
 // Take the phonebook above and use map to return a new phonebook that includes a country-code that matches the rest of the phone number.
 // For example, the 0th element of the new array should be {Abe: "1-111-111-1111"}
 
-//Your code here
+//Your code here (could not figure out)
+let newArray = phoneBook.map((item)=>{
+  let rObj = {};
+  rObj [item.key] = item.value
+  return rObj;
+})
