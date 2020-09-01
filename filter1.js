@@ -19,8 +19,11 @@ var people = [
 
 // (1) Write code that uses the filter function, and the below isCool function to return a list of people who are cool.
 
-var isCool = function(person) {
-	return person.coolnessScore > 20;
+var isCool = function() {
+   var names = people.filter(person=> person.coolnessScore > 20)
+   return names
 }
+
+isCool()
 
 // Your code goes here
