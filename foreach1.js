@@ -9,3 +9,7 @@
 var foods = ["pizza", "tacos", "ice cream", "sushi"];
 
 // your code here
+foods.forEach(food => {
+    console.log("I like " + food);
+  });
+  //*wasn't sure if i should have used conditionals or was just a typo with "I like sushi".
