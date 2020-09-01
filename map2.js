@@ -31,3 +31,17 @@ var phoneBook = [
 // For example, the 0th element of the new array should be {Abe: "1-111-111-1111"}
 
 //Your code here
+
+// mapping through each value (object) and returning it in a new array.
+const newArray = phoneBook.map(function(customer){
+  // object.key pulls each 'key value from the key.value pair in an object
+  let name = Object.keys(customer);
+  // using each key-value to compare name value and the new variable 
+  let phoneNumber = customer[name];
+  //creating a new empty object 
+  let newRecord = {};
+  //storing each iteration changes into new records  
+  newRecord[name] = '+' + phoneNumber.charAt(0) + '-' + phoneNumber 
+  return newRecord
+});
+console.log(newArray);
