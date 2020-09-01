@@ -24,3 +24,6 @@ var isCool = function(person) {
 }
 
 // Your code goes here
+coolPeople = people.filter(isCool)
+console.log(coolPeople)
+//I didnt know how to ONLY list the names instead of the full arrays

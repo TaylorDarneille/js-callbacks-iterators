@@ -11,4 +11,6 @@
 ];
 
 // your code here
-
+foods.forEach(
+  (foods,index)=>console.log(foods.name+" is "+foods.level+" delicious")
+ )

@@ -31,3 +31,18 @@ var phoneBook = [
 // For example, the 0th element of the new array should be {Abe: "1-111-111-1111"}
 
 //Your code here
+//var phoneNumber = (Object.values(phoneBook[0])).toString()
+//console.log("1-".concat(phoneNumber))
+
+
+const newPhoneBook = phoneBook.map((contact) => {
+  var phoneNumber = (Object.values(contact)).toString();
+  var newNumber = ("1-".concat(phoneNumber))
+  var name =(Object.keys(contact)).toString();
+  
+   return {name, newNumber}
+
+//   Object.values(contact).toString()
+ })
+
+ console.log(newPhoneBook)
