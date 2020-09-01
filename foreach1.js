@@ -10,7 +10,12 @@ var foods = ["pizza", "tacos", "ice cream", "sushi"];
 
 // your code here
 
-var foods = ["pizza", "tacos", "ice cream", "sushi"];
+// forEach: iterates through each value in an array. Everytime that I want to iterate over something use this method. 
+
+// the idea was to create a new variable called favFoods that would store the function
+// necessary to iterate through the foods variable. 
+// This forEach function added "I like" to the beginning of each string in the original
+// array. This was done by adding 'I like" + val 
 
 
 let favFoods = foods.forEach((val) => {

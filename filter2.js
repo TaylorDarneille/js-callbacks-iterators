@@ -18,6 +18,6 @@ let strings = misc.filter((val) => {
 console.log(strings)
 
 // Your code goes here
-// the idea is to create a variable that contains a funtion that will  
-// iterate through the misc array and determine whether a the variable is a string or not
+// // the idea is to create a variable that contains a funtion that will use a boolean to  
+// iterate through the misc array and determine whether a value is a string or not
 // the typeof method is used to check.
