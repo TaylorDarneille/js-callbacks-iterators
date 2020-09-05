@@ -12,3 +12,9 @@
 
 // your code here
 
+for(let i = 0; i < foods.length; i++) {
+   console.log(foods[i].name, "is " + foods[i].level + " delicious")
+}
+foods.forEach(function(food) {
+
+})
