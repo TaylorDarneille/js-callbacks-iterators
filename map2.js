@@ -40,7 +40,7 @@ const getNum = phoneBook.map(function(item) {
   //grab character at index 0
   const concNum = firstNum+'-'+num
   //create a new phone number that appends prefix captured in firstNum
-  return {[strName]: concNum}
+  return {strName: concNum}
   //save object that has key of person's name and value of updated phone number to the new array
 })
 
