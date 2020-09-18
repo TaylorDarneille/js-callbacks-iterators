@@ -4,13 +4,14 @@ var mneumonics = ['My Very Excellent Mother Just Sent Me Nine Pizzas', 'Please E
 // For example, the 0th element of the new array should be:
 // ['My', 'Very', 'Excellent', 'Mother', 'Just', 'Sent', 'Me', 'Nine', 'Pizzas']
 
- // array.map(function(currentValue, index, arr), thisValue)
-
 // Your code here!
-var mneumonics = ['My Very Excellent Mother Just Sent Me Nine Pizzas', 'Please Excuse My Dear Aunt Sally', 'Every Good Boy Does Fine']
 
+// Create nested arrays
+// Break sayings into individual words
 
-const newArr = mneumonics.map(str => {
-    return str.split(' ')
-})
-console.log(newArr);
+const splitUp = (arr) => {
+    let wordArr = arr.split(' ')
+    return wordArr
+  }
+  
+  console.log(mneumonics.map(splitUp))
