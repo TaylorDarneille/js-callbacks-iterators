@@ -24,8 +24,5 @@ var isCool = function(person) {
 }
 
 // Your code goes here
-
-const coolPeople = people.filter(isCool)  // .Filter is going over and seeing who is 
-console.log(coolPeople) // 
-
-
+const coolPeeps = people.filter(isCool)
+console.log(coolPeeps)
